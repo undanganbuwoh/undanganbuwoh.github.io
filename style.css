@@ -1,0 +1,98 @@
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#fff7f0;
+text-align:center;
+color:#333;
+}
+
+/* batik background */
+
+body::before{
+content:"";
+position:fixed;
+width:100%;
+height:100%;
+background-image:url("https://www.transparenttextures.com/patterns/batthern.png");
+opacity:0.2;
+z-index:-1;
+}
+
+/* envelope */
+
+.envelope{
+position:fixed;
+width:100%;
+height:100vh;
+background:#f3e5cd;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:10;
+}
+
+.envelope-card{
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+button{
+padding:12px 25px;
+background:#caa64b;
+border:none;
+color:white;
+border-radius:25px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+/* card section */
+
+.card{
+background:white;
+max-width:700px;
+margin:60px auto;
+padding:40px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* gallery */
+
+.slider{
+display:flex;
+overflow-x:auto;
+gap:15px;
+}
+
+.slider img{
+width:80%;
+border-radius:10px;
+}
+
+/* countdown */
+
+#countdown{
+font-size:24px;
+color:#caa64b;
+margin-top:15px;
+}
+
+/* reveal animation */
+
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
