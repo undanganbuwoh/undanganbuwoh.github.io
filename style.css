@@ -1,0 +1,110 @@
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+text-align:center;
+background:#fff8f0;
+}
+
+/* batik background */
+
+body::before{
+content:"";
+position:fixed;
+width:100%;
+height:100%;
+background-image:url("https://www.transparenttextures.com/patterns/batthern.png");
+opacity:0.15;
+z-index:-1;
+}
+
+/* amplop */
+
+.envelope{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100vh;
+background:#f3e5cd;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.envelope button{
+padding:14px 30px;
+background:#c9a44f;
+border:none;
+color:white;
+border-radius:30px;
+font-size:16px;
+}
+
+#content{
+display:none;
+}
+
+/* hero */
+
+.hero{
+padding:80px 20px;
+}
+
+.hero h1{
+font-family:'Cinzel';
+color:#b08a35;
+font-size:40px;
+}
+
+#countdown{
+font-size:22px;
+margin-top:20px;
+color:#b08a35;
+}
+
+/* galeri */
+
+.gallery{
+padding:60px 20px;
+}
+
+.slider{
+display:flex;
+overflow-x:auto;
+gap:10px;
+}
+
+.slider img{
+width:80%;
+border-radius:10px;
+}
+
+/* buku tamu */
+
+.guestbook{
+padding:60px 20px;
+max-width:500px;
+margin:auto;
+}
+
+input,textarea{
+width:100%;
+padding:10px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+button{
+padding:10px 20px;
+background:#b08a35;
+color:white;
+border:none;
+border-radius:20px;
+}
+
+#list{
+margin-top:20px;
+text-align:left;
+}
